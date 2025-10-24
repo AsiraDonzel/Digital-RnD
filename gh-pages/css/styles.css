@@ -1,0 +1,63 @@
+body {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar-brand span {
+  color: #0d6efd !important;
+}
+
+.nav-link {
+  color: #333 !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0d6efd !important;
+  transform: translateY(-1px);
+}
+
+.animate-navbar {
+  animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Buttons */
+.hover-grow {
+  transition: all 0.25s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+/* Hero */
+.hero-img {
+  width: 480px;
+  height: 320px;
+  transition: all 0.3s ease;
+}
+
+.hero-img:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+footer {
+  font-size: 0.95rem;
+}
